@@ -57,3 +57,14 @@
       if(!ok){ msg.textContent = 'Hmm, that email looks off. Try again?'; msg.style.color = '#fda4af'; email.focus(); return; }
       msg.textContent = 'Subscribed! Check your inbox for a confirmation.'; msg.style.color = '#a7f3d0'; email.value = '';
     });
+
+    // script.js
+document.addEventListener("DOMContentLoaded", () => {
+  const mobileToggle = document.getElementById("mobileToggle");
+  const navLinks = document.getElementById("navLinks");
+
+  mobileToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("open");
+  });
+});
+
