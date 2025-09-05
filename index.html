@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <meta name="description" content="AssetMerkle is the Web3 & Blockchain society of IGDTUW. Learn, build, and grow with us." />
   <meta name="theme-color" content="#0ea5e9" />
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -117,30 +118,39 @@
 
   <!-- ABOUT -->
   <section id="about">
-    <div class="container">
-      <div class="section-head">
-        <h2>About AssetMerkle</h2>
-        <p>Student-led Web3 society where we experiment, ship, and share. From fundamentals to advanced research, we’ve got lanes for every level.</p>
-      </div>
-      <div class="cards">
-        <article class="card">
-          <div class="chip">🎯 Mission</div>
-          <h3>Empower Students in Web3</h3>
-          <p>>We aim to onboard the next wave of builders by simplifying blockchain, Bitcoin, and decentralized tech through hands-on learning.</p>
-        </article>
-        <article class="card">
-          <div class="chip">🧭 Values</div>
-          <h3>Decentralized • Inclusive • Bold</h3>
-          <p>We believe in open knowledge, peer-to-peer collaboration, and experimenting fearlessly. Every student can be a founder, hacker, or innovator here.</p>
-        </article>
-        <article class="card">
-          <div class="chip">⚒️ What we do</div>
-          <h3>Bootcamps • Hackathons • Web3 Collabs</h3>
-          <p>From Solidity bootcamps to DeFi hacknights, from speaker series to bounties — we bring real-world Web3 exposure right to campus.</p>
-        </article>
-      </div>
+  <div class="relative-container">
+    <!-- Full-section background 3D model -->
+    <model-viewer class="model-bg" src="bitcoin.glb" alt="3D Model of AssetMerkle"
+      auto-rotate
+      camera-controls>
+    </model-viewer>
+
+    <div class="section-head">
+      <h2>About AssetMerkle</h2>
+      <p>Student-led Web3 society where we experiment, ship, and share...</p>
     </div>
-  </section>
+
+    <div class="cards">
+      <article class="card">
+        <div class="chip">🎯 Mission</div>
+        <h3>Empower Students in Web3</h3>
+        <p>>We aim to onboard the next wave...</p>
+      </article>
+      <article class="card">
+        <div class="chip">🧭 Values</div>
+        <h3>Decentralized • Inclusive • Bold</h3>
+        <p>We believe in open knowledge...</p>
+      </article>
+      <article class="card">
+        <div class="chip">⚒️ What we do</div>
+        <h3>Bootcamps • Hackathons • Web3 Collabs</h3>
+        <p>From Solidity bootcamps to DeFi hacknights...</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+
 
   <!-- PILLARS -->
   <section id="pillars">

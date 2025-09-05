@@ -12,6 +12,45 @@
   --shadow: 0 10px 40px rgba(0,0,0,0.35);
   --glass-blur: blur(10px);
 }
+/* Default cursor */
+body {
+  cursor: url("ethCursor.png"), auto;
+}
+
+/* Pointer cursor (for clickable stuff) */
+a, button, .mobile-toggle, .card, .member {
+  cursor: url("bitPointer.png"), pointer;
+}
+
+.relative-container {
+  position: relative;
+  width: 100%;
+  padding: 80px 0;       /* restore spacing around content */
+  /* remove min-height: 100vh if you want it to size naturally */
+  overflow: hidden;
+}
+
+.model-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;           /* full viewport width */
+  height: 100%;           /* match container height */
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  pointer-events: none;
+  object-fit: cover;
+}
+
+/* Keep cards and head above model */
+.section-head,
+.cards {
+  position: relative;
+  z-index: 1;
+}
+
+
+
 
 /* Reset */
 *, *::before, *::after { box-sizing: border-box; }
